@@ -1,7 +1,7 @@
 require 'formula'
 
 class Tmux < Formula
-  url 'git://git.code.sf.net/p/tmux/tmux-code'
+  url 'git://git.code.sf.net/p/tmux/tmux-code', revision: 'b8aec17af16ca557a3069a475d31a90d2925fe11'
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
