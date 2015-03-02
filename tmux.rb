@@ -9,6 +9,11 @@ class Tmux < Formula
   depends_on 'pkg-config' => :build
   depends_on 'libevent'
 
+  patch do
+    url 'https://gist.githubusercontent.com/ToQoz/38d0955d07359c373e26/raw/776efdcec7d128e41eda6894ce7d2b49d26cdf1b/tmux-add-format-for-session-activity.patch'
+    sha1 'fcd191ebabe8f77f63484b02779f8f0e722ae7b0'
+  end
+
   def install
     system "sh", "autogen.sh"
 
