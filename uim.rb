@@ -2,8 +2,8 @@ require 'formula'
 
 class Uim < Formula
   homepage 'http://code.google.com/p/uim/'
-  url 'https://uim.googlecode.com/files/uim-1.8.6.tar.bz2'
-  sha1 '43b9dbdead6797880e6cfc9c032ecb2d37d42777'
+  url "https://github.com/uim/uim/releases/download/uim-1.8.6/uim-1.8.6.tar.bz2"
+  sha256 "7b1ea803c73f3478917166f04f67cce6e45ad7ea5ab6df99b948c17eb1cb235f"
 
   deprecated_option "with-x" => "with-x11"
 
